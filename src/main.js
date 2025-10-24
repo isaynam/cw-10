@@ -1,5 +1,7 @@
-import { header } from "./component/Header/Header.js";
-import { banner } from "./component/Banner/Banner.js";
+import { header } from "./component/header/header.js";
+import { introduction } from "./component/introduction/introduction.js";
+import { feature } from "./component/feature/feature.js";
+import {deatails} from "./component/deatails/deatails.js";
 import "./style.css";
 // document.addEventListener('DOMContentLoaded',function() {
 // 	const app=document.getElementById("app")
@@ -11,10 +13,14 @@ import "./style.css";
 export function render() {
 const app= document.getElementById("app")
 const componentHeader=header()
-const bannerText=banner()
+const bannerText=introduction()
+const featureComponent = feature();
+const cartDeatails = deatails();
 app.innerHTML=`
 ${componentHeader}
 ${bannerText}
+${featureComponent}
+${cartDeatails}
 `
 }
 document.addEventListener('DOMContentLoaded',render())

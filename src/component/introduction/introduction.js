@@ -1,4 +1,4 @@
-export function banner() {
+export function introduction() {
  return `<div class="flex py-10 px-15 w-full ">
 <div class=" flex flex-col gap-6 w-[55%]  ">
   <div class="text-4xl font-bold ">یادگیری ری اکت از صفر تا پیشرفته</div>
